@@ -13,11 +13,10 @@ import {
     IonIcon,
     IonButton,
 } from '@ionic/react'
-import { homeOutline, newspaperOutline, logOutOutline, logOut} from 'ionicons/icons'
-import { Redirect, Route } from 'react-router'
+import { homeOutline, newspaperOutline, logOutOutline } from 'ionicons/icons'
+import { Redirect, Route } from 'react-router-dom'
 import Page2 from './Page2'
 import Page1 from './Page1'
-import Details from './Details'
 
 const Menu = () => {
 
@@ -56,7 +55,6 @@ const Menu = () => {
         <IonRouterOutlet id="main">
               <Route exact path="/app/page1" component={Page1}/>
               <Route exact path="/app/page2" component={Page2}/>
-              <Route exact path="/app/page1/details" component={Details}/>
                 <Route exact path="/app">
                     <Redirect to="/app/page1"/>
                 </Route>

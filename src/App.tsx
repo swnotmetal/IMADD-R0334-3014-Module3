@@ -22,6 +22,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Details from './pages/Details';
 
 setupIonicReact();
 
@@ -36,7 +37,10 @@ const App: React.FC = () => (
           <Menu />
         </Route>
         <Route exact path="/">
-          <Redirect to="/app/page1" />
+          <Redirect to="/login" />
+        </Route>
+        <Route exact path="/movies/:id" component={Details}>
+
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
