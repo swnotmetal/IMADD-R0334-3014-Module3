@@ -36,8 +36,8 @@ export interface SearchError {
 export const useApi = () => {
 
     let url = 'https://www.omdbapi.com/'
-    let apikey = process.env.movie_api // You should always use .env and rule it out from gitignore, remember pushing apikey to a public repo is a VERY bad practice! 
-
+    let apikey = import.meta.env.movie_api // You should always use .env and rule it out from gitignore, remember pushing apikey to a public repo is a VERY bad practice! 
+//correction: // In Vite, use import.meta.env instead of process.env
     // This function is what Page1.tsx calls when the user searches for something
     // It takes the search term and type, then talks to the movie database
     const searchData = async(title: string, type: SearchType): Promise<SearchResult[] | SearchError> => {
