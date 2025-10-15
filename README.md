@@ -2,15 +2,15 @@
 
 A simple location-based map application built with Ionic React to explore and bookmark favorite places with custom notes and emojis.
 
-## � Live Demo
+## Live Demo
 
-**🚀 Deployed App**: [https://myspotr0334.netlify.app/](https://myspotr0334.netlify.app/)
+**🚀 Deployed App**: [https://myspotr0334.netlify.app/](https://myspotr0334.netlify.app/) Better with Chrome and mobile views.
 
 Try it out! Tap the map to add spots, swipe to delete, and click spots in the list to fly to their location.
 
 ---
 
-## �🎓 Learning Reflection
+## Learning Reflection
 
 ### Background Context
 As a junior full-stack developer with experience in React and React Native, this project served as my introduction to the Ionic framework. Coming from React Native's native-focused approach, I found Ionic's web-first cross-platform philosophy quite refreshing.
